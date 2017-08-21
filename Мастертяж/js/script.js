@@ -1,10 +1,12 @@
 $('.technique_slider').slick({
-  dots: false,
-  infinite: false,
-  arrows: false,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
+    dots: false,
+    infinite: false,
+    arrows: false,
+    draggable: false,
+    fade: false,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
 });
 
 
@@ -15,7 +17,10 @@ $('.technique_slider').slick({
 // });
 
 //Получаем список
-$('.wrapper').on('click', 'a[href*=#technique]', function() {
-    alert($(this).parent().index());
-
-})
+var $set = $('.technique_left .cell');
+$('.cell').on('click', function (e) {
+    e.preventDefault();
+    var n=$set.index(this);    
+    console.log(n);
+    $('.technique_slider').slick('slickGoTo', n)
+});
