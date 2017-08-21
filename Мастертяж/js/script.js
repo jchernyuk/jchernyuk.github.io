@@ -1,6 +1,6 @@
 $('.technique_slider').slick({
   dots: false,
-  infinite: true,
+  infinite: false,
   arrows: false,
   speed: 300,
   slidesToShow: 1,
@@ -13,3 +13,9 @@ $('.technique_slider').slick({
 //$(document).ready(function(){
 // alert(jQuery.fn.jquery);
 // });
+
+//Получаем список
+$('.wrapper').on('click', 'a[href*=#technique]', function() {
+    alert($(this).parent().index());
+
+})
