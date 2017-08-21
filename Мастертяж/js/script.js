@@ -3,10 +3,11 @@ $('.technique_slider').slick({
     infinite: false,
     arrows: false,
     draggable: false,
-    fade: false,
+    fade: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    cssEase: 'linear'
 });
 
 
