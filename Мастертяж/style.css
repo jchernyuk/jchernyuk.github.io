@@ -469,6 +469,7 @@ template {
 }
 .technique_right {
 	width: 70%;
+    transform: scaleY(1.05);
     border: 2px solid #ffff00;
     background: #ffffff;
 }
@@ -493,6 +494,18 @@ template {
     padding: 15px 0 10px 20px;
     color: #1a1919;
     background: #ffff00;
+}
+.technique_slide {
+    padding: 25px 20px 50px;
+}
+.technique_photo {
+    text-align: center;
+}
+.technique__text_top {
+    width: 86%;
+    font-size: 16px;
+    font-family: RobotoSlab-Light;
+    color: #5b5b5b;
 }
 /*technique end*/
 
