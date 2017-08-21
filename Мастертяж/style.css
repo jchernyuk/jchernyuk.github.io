@@ -459,6 +459,9 @@ template {
 .technique_title {
 	color: #ffffff;
 }
+.technique_galery {
+    display: flex;
+}
 .technique_left {
 	width: 30%;
     border: 1px solid #686868;
@@ -466,6 +469,8 @@ template {
 }
 .technique_right {
 	width: 70%;
+    border: 2px solid #ffff00;
+    background: #ffffff;
 }
 .technique_link {
 	border: 0;
