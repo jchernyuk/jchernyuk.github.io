@@ -688,7 +688,8 @@ template {
     background: #ffff00;
     transition: 0.5s ease;
 }
-.technique_link:hover {
+.technique__inform_link:hover {
+    background: rgba(255, 255, 0, 0.8);
     box-shadow: 1px 3px 0 1px #404040;
 }
 /*technique end*/
